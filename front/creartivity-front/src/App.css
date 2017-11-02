@@ -179,3 +179,7 @@ footer{
 .hidden{
     visibility: hidden;
 }
+
+div.card.flipped{
+  background-color: transparent;
+}

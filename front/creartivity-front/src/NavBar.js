@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './modal.css';
 
 export default class NavBar extends React.Component {
-  
+
   constructor(props) {
     super(props);
 
@@ -16,7 +16,7 @@ export default class NavBar extends React.Component {
       modal: false,
       cardStyle: 'card'
     };
-    
+
   }
   toggle() {
     this.setState({
@@ -40,14 +40,14 @@ export default class NavBar extends React.Component {
     }
 
 
-    
+
   render() {
     return (
       <div className="container px-md-5 ">
       <style>
       @import url('https://fonts.googleapis.com/css?family=Lobster');
       </style>
-      
+
         <Navbar className="fixed-top" color="faded" light expand="md">
           <NavbarBrand href="/" className="whiteoutline">cre<span className="createorlog3">ART</span>ivity</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -113,7 +113,7 @@ export default class NavBar extends React.Component {
             </NavItem>
 
             <NavItem>
-            <NavLink href="https://www.linkedin.com/in/zachariahlowe" className="whiteoutline">Contact</NavLink>
+            <NavLink href="https://www.linkedin.com/in/nathanbauercodes/" className="whiteoutline">Contact</NavLink>
 
           </NavItem>
             </Nav>
@@ -225,5 +225,5 @@ Modal.propTypes = {
   modalTransition: PropTypes.shape(Fade.propTypes),
 
 
-  
+
 }
